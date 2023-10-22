@@ -69,65 +69,58 @@ const projects = ref([
         <div class="flex flex-col items-start justify-start min-w-[18rem] w-fit bg-white/10 rounded-lg gap-2 p-3">
           <h3 class="text-[1.3rem]">Base Web</h3>
           <div class="flex items-start justify-start w-full bg-white/10 rounded-lg gap-2 p-3">
-            <Icon name="vscode-icons:file-type-html" class="w-8 h-8" />
-            <Icon name="vscode-icons:file-type-css" class="w-8 h-8" />
-            <Icon name="vscode-icons:file-type-js" class="w-8 h-8" />
-            <Icon name="vscode-icons:file-type-typescript" class="w-8 h-8" />
+            <HomeSkillIcon name="vscode-icons:file-type-html" tip="HTML" />
+            <HomeSkillIcon name="vscode-icons:file-type-css" tip="CSS" />
+            <HomeSkillIcon name="logos:javascript" tip="Javascript" />
+            <HomeSkillIcon name="vscode-icons:file-type-typescript-official" tip="Typescript" />
           </div>
         </div>
 
         <div class="flex flex-col items-start justify-start min-w-[18rem] w-fit bg-white/10 rounded-lg gap-2 p-3">
           <h3 class="text-[1.3rem]">Web Frameworks</h3>
           <div class="flex items-start justify-start w-full bg-white/10 rounded-lg gap-2 p-3">
-            <Icon name="vscode-icons:file-type-next" class="w-8 h-8" />
-            <Icon name="vscode-icons:file-type-reactjs" class="w-8 h-8" />
-            <Icon name="vscode-icons:file-type-vue" class="w-8 h-8" />
-            <Icon name="vscode-icons:file-type-nuxt" class="w-8 h-8" />
+            <HomeSkillIcon name="vscode-icons:file-type-next" tip="Next.js" />
+            <HomeSkillIcon name="vscode-icons:file-type-reactjs" tip="React" />
+            <HomeSkillIcon name="vscode-icons:file-type-vue" tip="Vue" />
+            <HomeSkillIcon name="vscode-icons:file-type-nuxt" tip="Nuxt.js" />
           </div>
         </div>
 
-        <div class="flex flex-col items-start justify-start min-w-[18rem] w-fit bg-white/10 rounded-lg gap-2 p-3">
-          <h3 class="text-[1.3rem]">Backend</h3>
-          <div class="flex items-start justify-start w-full bg-white/10 rounded-lg gap-2 p-3">
-            <Icon name="vscode-icons:file-type-next" class="w-8 h-8" />
-            <Icon name="vscode-icons:file-type-nuxt" class="w-8 h-8" />
-            <Icon name="vscode-icons:file-type-prisma" class="w-8 h-8" />
-            <Icon name="simple-icons:cockroachlabs" class="w-8 h-8" />
-            <Icon name="simple-icons:auth0" class="w-8 h-8" />
+        <HomeIconContainer title="Backend">
+          <HomeSkillIcon name="vscode-icons:file-type-next" tip="Next.js" />
+          <HomeSkillIcon name="vscode-icons:file-type-nuxt" tip="Nuxt.js" />
+          <HomeSkillIcon name="vscode-icons:file-type-prisma" tip="Prisma ORM" />
+          <HomeSkillIcon name="simple-icons:cockroachlabs" tip="CockroachDB" />
+          <HomeSkillIcon name="simple-icons:auth0" tip="Auth0" />
+          <div class="skill-image" data-tip="Clerk">
             <img src="/clerk.png" class="w-8 h-8">
           </div>
-        </div>
+        </HomeIconContainer>
 
-        <div class="flex flex-col items-start justify-start min-w-[18rem] w-fit bg-white/10 rounded-lg gap-2 p-3">
-          <h3 class="text-[1.3rem]">Python</h3>
-          <div class="flex items-start justify-start w-full bg-white/10 rounded-lg gap-2 p-3">
-            <Icon name="vscode-icons:file-type-python" class="w-8 h-8" />
-            <Icon name="logos:matplotlib-icon" class="w-8 h-8" />
-            <Icon name="logos:numpy" class="w-8 h-8" />
-            <Icon name="vscode-icons:file-type-django" class="w-8 h-8" />
-          </div>
-        </div>
+        <HomeIconContainer title="Python">
+          <HomeSkillIcon name="vscode-icons:file-type-python" tip="Python" />
+          <HomeSkillIcon name="logos:matplotlib-icon" title="Matplotlib" />
+          <HomeSkillIcon name="logos:numpy" tip="Numpy" />
+          <HomeSkillIcon name="vscode-icons:file-type-django" tip="DJango" />
+        </HomeIconContainer>
 
-        <div class="flex flex-col items-start justify-start min-w-[18rem] w-fit bg-white/10 rounded-lg gap-2 p-3">
-          <h3 class="text-[1.3rem]">Misc</h3>
-          <div class="flex items-start justify-start w-full bg-white/10 rounded-lg gap-2 p-3">
-            <Icon name="logos:visual-studio-code" class="w-8 h-8"></Icon>
-            <Icon name="logos:pycharm" class="w-8 h-8"></Icon>
-            <Icon name="logos:git-icon" class="w-8 h-8"></Icon>
-            <Icon name="logos:mysql" class="w-8 h-8"></Icon>
-            <Icon name="devicon:postgresql" class="w-8 h-8"></Icon>
-          </div>
-        </div>
+        <HomeIconContainer title="Misc">
+          <HomeSkillIcon name="logos:visual-studio-code" tip="Visual Studio Code" />
+          <HomeSkillIcon name="logos:pycharm" tip="PYCharm editor" />
+          <HomeSkillIcon name="logos:git-icon" tip="Git" />
+          <HomeSkillIcon name="logos:mysql" tip="MySQL" />
+          <HomeSkillIcon name="devicon:postgresql" tip="Postgresql" />
+        </HomeIconContainer>
 
       </div>
 
       <h3 class="mt-16 text-h3 font-serif">Wanting to learn:</h3>
 
       <div class="flex items-start justify-start w-fit max-w-[95vw] bg-white/10 rounded-lg gap-2 p-3">
-        <Icon name="logos:solidjs-icon" class="w-8 h-8"></Icon>
-        <Icon name="vscode-icons:file-type-flutter" class="w-8 h-8" />
-        <Icon name="vscode-icons:file-type-swift" class="w-8 h-8" />
-        <Icon name="logos:solidjs-icon" class="w-8 h-8"></Icon>
+        <HomeSkillIcon name="logos:solidjs-icon" tip="SolidJS" />
+        <HomeSkillIcon name="vscode-icons:file-type-flutter" tip="Flutter" />
+        <HomeSkillIcon name="vscode-icons:file-type-swift" tip="Swift" />
+        <HomeSkillIcon name="tabler:brand-react-native" tip="React Native" />
       </div>
 
     </section>
@@ -137,8 +130,12 @@ const projects = ref([
     <section class="min-h-screen w-screen flex mt-4 flex-col items-center justify-start gap-8">
       <h1 class="text-h1 font-serif">Projects</h1>
 
-      <span class="text-red-500">unfinished</span>
-      
+      <div class="flex flex-wrap gap-8 items-center justify-center w-full px-4">
+
+        <HomeProjectCard title="Discussions App" description="hello this is advanced discussions app" github="chill31/discussions-app" live-demo="chill31-discussions" />
+
+      </div>
+
     </section>
 
   </Container>

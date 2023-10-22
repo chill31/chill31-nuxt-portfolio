@@ -16,7 +16,7 @@ export default {
       fontSize: {
         'h1': '4.8rem',
         'h2': '2.8rem',
-        'h3': '2rem',
+        'h3': '1.7rem',
         'main': '1.1rem',
       },
     },

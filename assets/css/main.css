@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 ::selection {
-  @apply bg-accent text-black
+  @apply bg-accent/[.15]
 }
 
 * {
@@ -12,4 +12,27 @@
 
 span, p, div {
   @apply text-main
+}
+
+.skill-icon, .skill-image {
+  position: relative;
+}
+
+.skill-icon::before, .skill-image::before {
+  content: attr(data-tip);
+  background-color: #181a1f;
+  padding: .2rem;
+  border-radius: .2rem;
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: scaleX(0) translate(-50%);
+  opacity: 0;
+  min-width: max-content;
+  transition: opacity 200ms ease;
+}
+
+.skill-icon:hover::before, .skill-image:hover::before {
+  transform: scaleX(1) translate(-50%);
+  opacity: 1;
 }
