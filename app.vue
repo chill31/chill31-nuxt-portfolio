@@ -73,6 +73,7 @@ const projects = ref([
             <HomeSkillIcon name="vscode-icons:file-type-css" tip="CSS" />
             <HomeSkillIcon name="logos:javascript" tip="Javascript" />
             <HomeSkillIcon name="vscode-icons:file-type-typescript-official" tip="Typescript" />
+            <HomeSkillIcon name="logos:tailwindcss-icon" tip="TailwindCSS" />
           </div>
         </div>
 
@@ -92,9 +93,7 @@ const projects = ref([
           <HomeSkillIcon name="vscode-icons:file-type-prisma" tip="Prisma ORM" />
           <HomeSkillIcon name="simple-icons:cockroachlabs" tip="CockroachDB" />
           <HomeSkillIcon name="simple-icons:auth0" tip="Auth0" />
-          <div class="skill-image" data-tip="Clerk">
-            <img src="/clerk.png" class="w-8 h-8">
-          </div>
+          <HomeSkillImage tip="Clerk" src="/clerk.png" />
         </HomeIconContainer>
 
         <HomeIconContainer title="Python">
@@ -132,11 +131,133 @@ const projects = ref([
 
       <div class="flex flex-wrap gap-8 items-center justify-center w-full px-4">
 
-        <HomeProjectCard title="Discussions App" description="hello this is advanced discussions app" github="chill31/discussions-app" live-demo="chill31-discussions" />
+        <HomeProjectCard title="Discussions App"
+          description="Advanced discussions app which supports searching by filter, authentication, and many more. It supports discussion tags and comments with the help of database. If you are logged in, you can add comments to any discussion. For no reason, it also has a light mode."
+          github="chill31/discussions-app" live-demo="chill31-discussions" image="/previews/discussions.png"
+          :inverse="false" :tech-used="[
+            {
+              tech: 'Next.js',
+              iconName: 'vscode-icons:file-type-next'
+            },
+            {
+              tech: 'React',
+              iconName: 'logos:react'
+            },
+            {
+              tech: 'TailwindCSS',
+              iconName: 'logos:tailwindcss-icon'
+            },
+            {
+              tech: 'Typescript',
+              iconName: 'vscode-icons:file-type-typescript-official'
+            },
+            {
+              tech: 'NextUI',
+              iconName: 'Next UI',
+              image: true,
+              src: '/nextui.png'
+            },
+            {
+              tech: 'Prisma ORM',
+              iconName: 'vscode-icons:file-type-prisma'
+            },
+            {
+              tech: 'CockroachDB',
+              iconName: 'simple-icons:cockroachlabs'
+            },
+            {
+              tech: 'Clerk',
+              iconName: 'Clerk Auth',
+              image: true,
+              src: '/clerk.png'
+            },
+          ]" />
+
+        <HomeProjectCard title="Quiz App"
+          description="Easy to use quiz app where you can take quizzes without the need of authentication. If you do log in, you will be able to create quizzes and save results after taking any quiz"
+          github="chill31/quiz-app" live-demo="chill31-quiz" image="/previews/quiz.png" :inverse="false" :tech-used="[
+            {
+              tech: 'Next.js',
+              iconName: 'vscode-icons:file-type-next'
+            },
+            {
+              tech: 'React',
+              iconName: 'logos:react'
+            },
+            {
+              tech: 'TailwindCSS',
+              iconName: 'logos:tailwindcss-icon'
+            },
+            {
+              tech: 'Typescript',
+              iconName: 'vscode-icons:file-type-typescript-official'
+            },
+            {
+              tech: 'NextUI',
+              iconName: 'Next UI',
+              image: true,
+              src: '/nextui.png'
+            },
+            {
+              tech: 'Prisma ORM',
+              iconName: 'vscode-icons:file-type-prisma'
+            },
+            {
+              tech: 'CockroachDB',
+              iconName: 'simple-icons:cockroachlabs'
+            },
+            {
+              tech: 'Clerk',
+              iconName: 'Clerk Auth',
+              image: true,
+              src: '/clerk.png'
+            },
+          ]" />
+
+        <HomeProjectCard title="Blog App"
+          description="Simple Blog app which has private and public blogs with authentication. Private blogs can only be viewed by logged-in users while public blogs can be viewed by anyone. Administrators can log in via a specific password and create and manage their blogs. Users can also customize the website's theme by going to the dashboard"
+          github="chill31/blog-app" live-demo="chill31-blog" image="/previews/blog.png"
+          :inverse="false" :tech-used="[
+            {
+              tech: 'Next.js',
+              iconName: 'vscode-icons:file-type-next'
+            },
+            {
+              tech: 'React',
+              iconName: 'logos:react'
+            },
+            {
+              tech: 'TailwindCSS',
+              iconName: 'logos:tailwindcss-icon'
+            },
+            {
+              tech: 'Typescript',
+              iconName: 'vscode-icons:file-type-typescript-official'
+            },
+            {
+              tech: 'NextUI',
+              iconName: 'Next UI',
+              image: true,
+              src: '/nextui.png'
+            },
+            {
+              tech: 'Prisma ORM',
+              iconName: 'vscode-icons:file-type-prisma'
+            },
+            {
+              tech: 'CockroachDB',
+              iconName: 'simple-icons:cockroachlabs'
+            },
+            {
+              tech: 'Clerk',
+              iconName: 'Clerk Auth',
+              image: true,
+              src: '/clerk.png'
+            },
+          ]" />
 
       </div>
 
     </section>
 
-  </Container>
-</template>
+</Container></template>
