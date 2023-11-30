@@ -128,6 +128,7 @@ const projects = ref([
 
     <section class="min-h-screen w-screen flex mt-4 flex-col items-center justify-start gap-8">
       <h1 class="text-h1 font-serif">Projects</h1>
+      <p class="text-center w-[60rem] max-w-[calc(100vw-2rem)] mb-12 mt-[-2rem]">All of my projects are not listed here as it is a pain to update them everytime I create something, so just go to <a href="https://chill31-projects.vercel.app">My Projects Website</a> as it auto updates according to my github repositories.</p>
 
       <div class="flex flex-wrap gap-8 items-center justify-center w-full px-4">
 
